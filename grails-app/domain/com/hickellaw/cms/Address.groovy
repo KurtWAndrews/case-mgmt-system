@@ -39,6 +39,5 @@ class Address {
    * and by by the AddressController to validate input into the address
    * fields.
    */
-  static constraints = {
-  }
+  static constraints = {}
 }

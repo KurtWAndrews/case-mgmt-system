@@ -7,7 +7,5 @@ class Appointment {
   Firm firm
   Employee organizer
 
-  static belongsTo = [firm:Firm, organizer:Employee]
-  static hasMany = [attendees:Person]
   static constraints = {}
 }

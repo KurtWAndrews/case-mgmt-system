@@ -5,6 +5,5 @@ class Firm extends BusinessEntity {
   BigDecimal billableHours
   String lexusNexusUrl
 
-  static hasMany = [calendar:Appointment]
   static constraints = {}
 }

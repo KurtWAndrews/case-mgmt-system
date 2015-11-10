@@ -8,8 +8,7 @@ class LegalCase {
   Date endDte
   Date closeDte
   BigDecimal totalCost
+  Boolean isProBono
 
-  static belongsTo = [client:Client, primaryLawyer: Lawyer]
-  static hasMany = [employees:Employee, logEntries:DailyLogEntry]
   static constraints = {}
 }

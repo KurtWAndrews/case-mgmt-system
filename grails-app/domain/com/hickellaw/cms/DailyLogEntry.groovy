@@ -6,6 +6,5 @@ class DailyLogEntry {
   Date logDte
   BigDecimal hoursBilled
 
-  static belongsTo = [employee:Employee, LegalCase:LegalCase]
   static constraints = {}
 }

@@ -5,6 +5,5 @@ class PhoneNumber {
   String phoneNumber
   BusinessEntity owner
   
-  static belongsTo = [owner: BusinessEntity]
   static constraints = {}
 }

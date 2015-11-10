@@ -6,7 +6,5 @@ class Person extends BusinessEntity {
   String userId
   String userPassword
 
-  static belongsTo = Appointment
-  static hasMany=[appiontments:Appointment]
   static constraints = {}
 }

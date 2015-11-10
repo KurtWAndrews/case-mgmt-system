@@ -5,6 +5,5 @@ class EmailAddress {
   String emailAddress
   BusinessEntity owner
   
-  static belongsTo = [owner: BusinessEntity]
   static constraints = {}
 }
