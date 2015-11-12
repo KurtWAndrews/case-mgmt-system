@@ -1,8 +1,8 @@
 package com.hickellaw.cms
 
-class Lawyer extends Person {
+class Lawyer extends Employee {
   BigDecimal billingRate
-  
+
   static constraints = {}
 
   Set<Specialty> getSpecialties() {

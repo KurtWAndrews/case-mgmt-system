@@ -1,11 +1,13 @@
 package com.hickellaw.cms
 
-class User implements Serializable {
+class User extends BusinessEntity implements Serializable {
 
 	private static final long serialVersionUID = 1
 
 	transient springSecurityService
 
+  String fname
+  String lname
 	String username
 	String password
 	boolean enabled = true

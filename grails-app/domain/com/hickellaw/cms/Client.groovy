@@ -1,7 +1,7 @@
 package com.hickellaw.cms
 
-class Client extends Person {
+class Client extends User {
   String companyName
-  
+
   static constraints = {}
 }

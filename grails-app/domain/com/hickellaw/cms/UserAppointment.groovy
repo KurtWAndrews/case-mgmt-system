@@ -1,24 +1,24 @@
 package com.hickellaw.cms
 
-class PersonAppointment implements Serializable {
-  Person person
+class UserAppointment implements Serializable {
+  User user
   Appointment appointment
 
   static mapping = {
-    table 'person_appointment'
+    table 'user_appointment'
     version false
-    id composite: ['person', 'appointment']
+    id composite: ['user', 'appointment']
   }
   static constraints = {}
 
   boolean equals(o) {
     if (this.is(o)) return true
-    if (!(o instanceof PersonAppointment)) return false
+    if (!(o instanceof UserAppointment)) return false
 
-    PersonAppointment that = (PersonAppointment) o
+    UserAppointment that = (UserAppointment) o
 
     if (appointment != that.appointment) return false
-    if (person != that.person) return false
+    if (user != that.user) return false
 
     return true
   }
@@ -26,7 +26,7 @@ class PersonAppointment implements Serializable {
   int hashCode() {
     int result
 
-    result = (person != null ? person.hashCode() : 0)
+    result = (user != null ? user.hashCode() : 0)
     result = 31 * result + (appointment != null ? appointment.hashCode() : 0)
 
     return result

@@ -4,6 +4,6 @@ class EmailAddress {
   Type type
   String emailAddress
   BusinessEntity owner
-  
+
   static constraints = {}
 }
