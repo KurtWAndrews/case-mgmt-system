@@ -10,7 +10,7 @@ class Address {
   String street
 
   /**
-   * appartment, suite, room, or office number if present
+   * apartment, suite, room, or office number if present
    */
   String aptSuite
 

@@ -38,3 +38,6 @@
 # intellij
 /.idea
 *.iml
+
+# gradle
+/.gradle
